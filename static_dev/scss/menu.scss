@@ -1,0 +1,44 @@
+.bg-light{
+    background-color: $principal !important;
+}
+
+.customizar2{
+    height: 100px;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.navbar-brand {
+    font-size: 14px !important;
+    display: flex;
+    justify-content: bottom;
+    align-items: center;
+  }
+
+.containerfooter{
+    background-color: $footercolor;
+    height: 250px;
+    width: 100%;
+}
+
+.footerletratitulo{
+    color: $footercolortitulo;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footerletra{
+    color: $footercolorletra;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

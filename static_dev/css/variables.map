@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "variables.css",
+	"sources": [
+		"../scss/variables.scss"
+	],
+	"sourcesContent": [
+		"// colores\r\n$principal: #FFA500;\r\n$footercolor: #222222;\r\n$footercolortitulo: #C8C8C8;\r\n$footercolorletra: #7B8887;\r\n"
+	],
+	"names": [],
+	"mappings": ""
+}

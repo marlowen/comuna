@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # apps propias
     "noticias.apps.NoticiasConfig",
+    "carrousel.apps.CarrouselConfig"
     # apps de terceros
 ]
 

@@ -2,6 +2,65 @@
 {% load i18n %}
 
 {% block content %}
+<nav class="navbar navbar-expand-lg bg-light py-0">
+    <div class="container-fluid px-2,5"">
+      <div style="height: 100px;">
+        <center><img class="py-1" src="/media/logo.svg" type="img/svg" style="height: 70px; width: auto;"></center>
+        <a class="navbar-brand px-1 py-0" href="#">Comuna de Eusebia</a>
+      </div>
+      <button class="navbar-toggler my-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="customizar2 collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto" style="height: 100%;">
+          <li class="nav-item" id="inicio">
+            <a class="nav-link px-lg-4" href="{% url 'home' %}">Inicio</a>
+          </li>
+          <li class="nav-item" id="comuna">
+            <a class="nav-link px-lg-4" href="{% url 'comuna' %}">Comuna</a>
+          </li>
+          <li class="nav-item" id="noticias">
+            <a class="nav-link px-lg-4" href="#">Noticias</a>
+          </li>
+          <li class="nav-item" id="covid19">
+            <a class="nav-link px-lg-4" href="#">Covid-19</a>
+          </li>          
+          <li class="nav-item" id="consultas">
+            <a class="nav-link px-lg-4" href="#">Consultas</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
+  {% block home %}  {% endblock %}
 
-{% endblock %}
+  {% block comuna %}  {% endblock %}
+
+<footer>
+  <div class="containerfooter container-fluid ">
+    <div class="row">
+      <div class="col-lg-6" style="padding-top: 40px; padding-left: 40px;">
+        <h6 class="footerletratitulo pb-3">COMUNA DE EUSEBIA</h6>
+        <p class="footerletra">San Martin 0</p>
+        <p class="footerletra">Eusebia, Santa Fe - 2317</p>
+        <p class="footerletra">03493 49-3269</p>
+      </div>
+      <div class="col-lg-2 logos">
+        <a><img src="/media/youtube.png"></a>
+      </div>
+      <div class="col-lg-2 logos">
+        <a><img src="/media/instagram.png"></a>
+      </div>
+      <div class="col-lg-2 logos">
+        <a><img src="/media/facebook.png"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  {% endblock %}
